@@ -18,7 +18,9 @@ The United States Geological Survey, or USGS for short, is responsible for provi
 
 ## Results ##
 
-![image](https://github.com/10H-K/Leaflet_Earthquake_Visualization/assets/152930492/12cf65cf-9795-4c60-bdb1-7a3bdf92d11d)
+![image](https://github.com/10H-K/Leaflet_Earthquake_Visualization/assets/152930492/b6c88649-5d9a-4622-ae52-00ba10a260f1)
 
 ## GitHub Pages ##
+
+https://10h-k.github.io/Leaflet_Earthquake_Visualization/
 
