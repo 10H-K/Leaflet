@@ -46,9 +46,16 @@ fetch(earthquake_data_url)
         fillOpacity: 0.7
       }).addTo(map);
 
-      marker.bindPopup(`<b>Magnitude:</b> ${magnitude}<br><b>Depth:</b> ${depth} km`);
-    });
+      marker.bindPopup(`
+        <b>Magnitude:</b> ${magnitude}<br>
+        <b>Depth:</b> ${depth} km<br>
+        <b>Location:</b> ${feature.properties.place}<br>
+        <b>Date:</b> ${new Date(feature.properties.time).toLocaleDateString()}<br>
+        <b>Time:</b> ${new Date(feature.properties.time).toLocaleTimeString()}<br>
+        <b>More info:</b> <a href="${feature.properties.url}" target="_blank">USGS Event Page</a>
+    `);
   });
+});  
 
 // Add Legend
 var legend = L.control({ position: 'bottomright' });
